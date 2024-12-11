@@ -1,0 +1,26 @@
+{
+  "name": "my-router-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev": "deno run -RWE --allow-ffi --allow-run --allow-sys --node-modules-dir npm:vite  --port=3001",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "start": "vite"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@tanstack/router-plugin": "^1.87.7",
+    "@vitejs/plugin-react": "^4.3.2",
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.87.7",
+    "@tanstack/router-devtools": "^1.87.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
